@@ -52,7 +52,7 @@ print("Female Income List:", female_income)
 # PART 2
 # -----------------------------
 
-iris = sns.load_dataset("Iris.csv")
+iris = sns.load_dataset("iris")
 
 print("\nFirst 5 rows of Iris Dataset:")
 print(iris.head())
