@@ -31,11 +31,9 @@ df['Science'].fillna(df['Science'].mean(), inplace=True)
 df['Attendance'].fillna(df['Attendance'].mean(), inplace=True)
 
 # Handle Inconsistencies
-df.loc[df['Math'] > 100, 'Math'] = 100
-
-df.loc[df['Attendance'] > 100, 'Attendance'] = 100
-
-df.loc[df['CGPA'] > 10, 'CGPA'] = 10
+df.loc[df['Math']>100,'Math']=100
+df.loc[df['Attendance']>100,'Attendance']=100
+df.loc[df['CGPA']>10,'CGPA']=10
 
 # Detect Outliers using IQR
 Q1 = df['Math'].quantile(0.25)
